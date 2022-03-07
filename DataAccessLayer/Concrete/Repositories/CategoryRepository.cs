@@ -10,11 +10,13 @@ using System.Threading.Tasks;
 //category repository sınıfım içinher bir metodun görevini yazdım
 namespace DataAccessLayer.Concrete.Repositories
 {
-    public class CategoryRepository : ICategoryDal
+    public class CategoryRepository :ICategoryDal
     {
         Context c = new Context(); //context sınıfını kullanmam lazım çünkü tablolarım burada
-        DbSet<Category> _object; //ordaki propları DbSet<> seklinde tuttugum için burdan bir nesne türetiyorum
-        
+        public DbSet<Category> _object; //ordaki propları DbSet<> seklinde tuttugum için burdan bir nesne türetiyorum
+
+       
+
         public void Delete(Category p)
         {
             _object.Remove(p);//nesneyi kaldır
@@ -40,6 +42,11 @@ namespace DataAccessLayer.Concrete.Repositories
         public void Update(Category p)
         {
             c.SaveChanges();
+        }
+
+        public Category Get(Expression<Func<Category, bool>> filter)
+        {
+            throw new NotImplementedException();
         }
     }
 }

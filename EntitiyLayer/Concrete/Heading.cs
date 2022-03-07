@@ -22,5 +22,6 @@ namespace EntitiyLayer.Concrete
 
         public int WriterId { get; set; }
         public virtual Writer Writer { get; set; }
+        public bool HeadingStatus { get; set; }
     }
 }

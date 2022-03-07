@@ -24,13 +24,22 @@ namespace DataAccessLayer.Concrete.Repositories
         
         public void Delete(T p)
         {
-            _object.Remove(p);//silme işlemini yap
+            var deletedEntitiy=c.Entry(p);
+            deletedEntitiy.State=EntityState.Deleted;
+           // _object.Remove(p);//silme işlemini yap
             c.SaveChanges();// değişiklikleri kaydet context üzerinden 
         }
 
+        public T Get(Expression<Func<T, bool>> filter)
+        {
+            return _object.SingleOrDefault(filter);//bir dizide veya listede sadece 1 deger döndürmek için etity linq
+        }//ör:Id si 5 olanı döndür
+
         public void Insert(T p)
         {
-            _object.Add(p);
+            var addedEntity = c.Entry(p);
+            addedEntity.State = EntityState.Added;
+           // _object.Add(p);
             c.SaveChanges();
         }
 
@@ -42,12 +51,15 @@ namespace DataAccessLayer.Concrete.Repositories
 
         public List<T> List(Expression<Func<T, bool>> filter)//şartlı listeleme
             //tüm özellikleri aynı sadeceList in içinde şart var
+            //ismi ali olanları listele
         {
             return _object.Where(filter).ToList();//listele ama where filter yap
         }
 
         public void Update(T p)
         {
+            var updatedEntity = c.Entry(p);
+            updatedEntity.State = EntityState.Modified;
             c.SaveChanges();
         }
     }

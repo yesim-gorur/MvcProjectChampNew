@@ -2,31 +2,46 @@
 @{
     Layout = null;
 }
-
-<h3>MvCkamp tablo örneği</h3>
-<table>
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<h3>MvCkamp tablo örneği-kategori</h3>
+<table class="table table-hover">
     <tr>
         <th>ID</th>
         <th>ADI</th>
         <th>AÇIKLAMA</th>
         <th>DURUM</th>
+        <th>GÜNCELLE</th>
     </tr>
     <tr>
         <td>1</td>
         <td>Eğitim</td>
         <td>Eğitim açıklaması</td>
         <td>true</td>
+        <td><button class="btn btn-success">Güncelle</button></td>
     </tr>
     <tr>
         <td>2</td>
         <td>sanat</td>
         <td>sanat açıklaması</td>
         <td>true</td>
+        <td><button class="btn btn-success">Güncelle</button></td>
     </tr>
     <tr>
         <td>3</td>
         <td>tiyatro</td>
         <td>tiyatro açıklaması</td>
         <td>true</td>
+        <td><button class="btn btn-success">Güncelle</button></td>
     </tr>
+    <tr>
+        <td>4</td>
+        <td>cinema</td>
+        <td>cinema açıklaması</td>
+        <td>true</td>
+        <td><button class="btn btn-success">Güncelle</button></td>
+    </tr>
+
 </table>
+<button class="btn btn-info">YENİ KATEGORİ</button>
+<button class="btn btn-success">KATEGORİ LİSTESİ</button>
+<button class="btn btn-danger">KATEGORİ AÇIKLAMALARI</button>

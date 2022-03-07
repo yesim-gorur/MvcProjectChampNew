@@ -19,5 +19,6 @@ namespace EntitiyLayer.Concrete
         public string Subject { get; set; }
         [StringLength(100)]
         public string Message { get; set; }
+        public bool ContactStatus { get; set; }
     }
 }

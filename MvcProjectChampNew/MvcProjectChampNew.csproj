@@ -433,6 +433,11 @@
     <Content Include="AdminLTE-3.0.4\plugins\fontawesome-free\webfonts\fa-brands-400.svg" />
     <Content Include="AdminLTE-3.0.4\plugins\fontawesome-free\webfonts\fa-regular-400.svg" />
     <Content Include="AdminLTE-3.0.4\plugins\fontawesome-free\webfonts\fa-solid-900.svg" />
+    <Content Include="AdminLTE-3.0.4\plugins\jquery\core.js" />
+    <Content Include="AdminLTE-3.0.4\plugins\jquery\jquery.js" />
+    <Content Include="AdminLTE-3.0.4\plugins\jquery\jquery.min.js" />
+    <Content Include="AdminLTE-3.0.4\plugins\jquery\jquery.slim.js" />
+    <Content Include="AdminLTE-3.0.4\plugins\jquery\jquery.slim.min.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -647,6 +652,8 @@
     <Content Include="AdminLTE-3.0.4\plugins\fontawesome-free\webfonts\fa-solid-900.ttf" />
     <Content Include="AdminLTE-3.0.4\plugins\fontawesome-free\webfonts\fa-solid-900.woff" />
     <Content Include="AdminLTE-3.0.4\plugins\fontawesome-free\webfonts\fa-solid-900.woff2" />
+    <Content Include="AdminLTE-3.0.4\plugins\jquery\jquery.min.map" />
+    <Content Include="AdminLTE-3.0.4\plugins\jquery\jquery.slim.min.map" />
     <None Include="Dockerfile" />
     <None Include=".dockerignore">
       <DependentUpon>Dockerfile</DependentUpon>
@@ -702,6 +709,8 @@
     <Content Include="Views\Contact\MessageListMenu.cshtml" />
     <Content Include="Views\Message\Inbox.cshtml" />
     <Content Include="Views\Message\Sendbox.cshtml" />
+    <Content Include="Views\Message\NewMessage.cshtml" />
+    <Content Include="Views\Message\GetInBoxMessageDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

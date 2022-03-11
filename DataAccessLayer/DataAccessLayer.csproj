@@ -56,6 +56,7 @@
     <Compile Include="Abstract\IContactDal.cs" />
     <Compile Include="Abstract\IContentDal.cs" />
     <Compile Include="Abstract\IHeadingDal.cs" />
+    <Compile Include="Abstract\IImageFileDal.cs" />
     <Compile Include="Abstract\IMessageDal.cs" />
     <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="Abstract\IWriterDal.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="EntitiyFramework\EFContactDal.cs" />
     <Compile Include="EntitiyFramework\EFContentDal.cs" />
     <Compile Include="EntitiyFramework\EFHeadingDal.cs" />
+    <Compile Include="EntitiyFramework\EFImageFileDal.cs" />
     <Compile Include="EntitiyFramework\EFMessageDal.cs" />
     <Compile Include="EntitiyFramework\EFWriterDal.cs" />
     <Compile Include="Migrations\202202232044502_mig1.cs" />
@@ -97,6 +99,14 @@
     <Compile Include="Migrations\202203061857160_mig_add_messageclass.cs" />
     <Compile Include="Migrations\202203061857160_mig_add_messageclass.designer.cs">
       <DependentUpon>202203061857160_mig_add_messageclass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203101950064_contact_date.cs" />
+    <Compile Include="Migrations\202203101950064_contact_date.designer.cs">
+      <DependentUpon>202203101950064_contact_date.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203110750301_mig_add_imageFile.cs" />
+    <Compile Include="Migrations\202203110750301_mig_add_imageFile.designer.cs">
+      <DependentUpon>202203110750301_mig_add_imageFile.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -132,6 +142,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202203061857160_mig_add_messageclass.resx">
       <DependentUpon>202203061857160_mig_add_messageclass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203101950064_contact_date.resx">
+      <DependentUpon>202203101950064_contact_date.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203110750301_mig_add_imageFile.resx">
+      <DependentUpon>202203110750301_mig_add_imageFile.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

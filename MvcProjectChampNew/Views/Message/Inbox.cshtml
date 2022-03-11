@@ -94,7 +94,7 @@
                                                 <b>@item.Subject</b>@item.MessageContent
                                             </td>
                                             <td class="mailbox-attachment"></td>
-                                            <td class="mailbox-date">5 mins ago</td>
+                                            <td class="mailbox-date">@(((DateTime)item.MessageDate).ToString("ddd-MMM-yyyy"))</td>
                                         </tr>
                                     }
                                 </tbody>

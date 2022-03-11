@@ -20,5 +20,6 @@ namespace EntitiyLayer.Concrete
         [StringLength(100)]
         public string Message { get; set; }
         public bool ContactStatus { get; set; }
+        public DateTime ContactDate { get; set; }
     }
 }

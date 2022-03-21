@@ -31,5 +31,10 @@ namespace MvcProjectChampNew.Controllers
             return View();//geriye bir sayfa döndürecek
         
         }
+        [AllowAnonymous]
+        public ActionResult HomePage()
+        {
+            return View();
+        }
     }
 }

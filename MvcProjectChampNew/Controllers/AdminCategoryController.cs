@@ -15,7 +15,7 @@ namespace MvcProjectChampNew.Controllers
     {
         // GET: AdminCategory
         CategoryManager cm = new CategoryManager(new EFCategoryDal());
-        [Authorize]
+        [Authorize(Roles ="B")]// sadece b rolüne sahip olan kişiler bu alanı görsün
         public ActionResult Index()
         {
             var categoryvalues = cm.GetList();

@@ -14,6 +14,7 @@ namespace MvcProjectChampNew.Controllers
         // GET: Contact
         ContactManager cm = new ContactManager( new EFContactDal());
         ContactValidator cv = new ContactValidator();
+        [AllowAnonymous]
         public ActionResult Index()
         {
             var contactvalues = cm.GetList();//getlist metodumla contact tablosundaki tüm degerleri bana getir bunu da contactvalues de tut

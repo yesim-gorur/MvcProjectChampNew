@@ -51,6 +51,7 @@ namespace MvcProjectChampNew.Controllers
             hm.HeadingAdd(p);
             return RedirectToAction("Index");
         }
+        [HttpGet]
         public ActionResult EditHeading(int id)//int id dememin nedeni şu sen birşeyi düzenleyeceksin ama neyi
             //belli bir id üzerinden düzenleme yapmalısın
         {

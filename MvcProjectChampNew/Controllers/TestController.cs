@@ -17,5 +17,9 @@ namespace MvcProjectChampNew.Controllers
         {
             return View();
         }
+        public ActionResult ToDoList()
+        {
+            return View();
+        }
     }
 }

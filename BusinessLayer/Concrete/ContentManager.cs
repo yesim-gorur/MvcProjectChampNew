@@ -43,7 +43,7 @@ namespace BusinessLayer.Concrete
 
         public List<Content> GetList()
         {
-            throw new NotImplementedException();//hata fırlatmasın die
+            return _contentDal.List();
         }
 
         public List<Content> GetListByHeadingID(int id)
@@ -53,6 +53,9 @@ namespace BusinessLayer.Concrete
             
         }
 
-        
+        public List<Content> GetListByWriter(int id)
+        {
+           return _contentDal.List(x=>x.WriterId==id);
+        }
     }
 }

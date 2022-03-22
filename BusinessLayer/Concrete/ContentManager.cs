@@ -41,9 +41,9 @@ namespace BusinessLayer.Concrete
             //getbyid idsine göre getir demek eger x.contentid parametredeki diğer id ye eşitse
         }
 
-        public List<Content> GetList()
+        public List<Content> GetList(string p)
         {
-            return _contentDal.List();
+            return _contentDal.List(x=>x.ContentValue.Contains(p));
         }
 
         public List<Content> GetListByHeadingID(int id)

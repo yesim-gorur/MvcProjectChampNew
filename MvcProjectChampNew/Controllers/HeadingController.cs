@@ -21,6 +21,12 @@ namespace MvcProjectChampNew.Controllers
             var headingvalues = hm.GetList();//heading manager deki get list metodunu getireceksin
             return View(headingvalues);//ekran döndüreceksin o da headingvalues
         }
+        public ActionResult HeadingReport()
+        {
+            var headingvalues = hm.GetList();//heading manager deki get list metodunu getireceksin
+            return View(headingvalues);//ekran döndüreceksin o da headingvalues
+
+        }
         [HttpGet]
         public ActionResult AddHeading()
         {

@@ -21,5 +21,12 @@ namespace MvcProjectChampNew.Controllers
         {
             return View();
         }
+        public ActionResult SweetAlert()
+        {
+
+            return View();
+
+
+        }
     }
 }

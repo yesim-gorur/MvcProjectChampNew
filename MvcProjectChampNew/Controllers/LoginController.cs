@@ -71,7 +71,7 @@ namespace MvcProjectChampNew.Controllers
         {
             FormsAuthentication.SignOut();
             Session.Abandon();
-            return RedirectToAction("Headings","Default");
+            return RedirectToAction("Heading","Default");
         }
     }
 }

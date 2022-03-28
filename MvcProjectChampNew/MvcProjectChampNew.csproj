@@ -2052,7 +2052,7 @@
     <Content Include="AdminLTE-3.0.4\web\css\simpleLightbox.css" />
     <Content Include="AdminLTE-3.0.4\web\css\snow.css" />
     <Content Include="AdminLTE-3.0.4\web\css\style.css" />
-    <Content Include="AdminLTE-3.0.4\web\images\adminkategory.PNG" />
+    <Content Include="AdminLTE-3.0.4\web\images\admincategory.PNG" />
     <Content Include="AdminLTE-3.0.4\web\images\adminlogin.PNG" />
     <Content Include="AdminLTE-3.0.4\web\images\banner.jpg" />
     <Content Include="AdminLTE-3.0.4\web\images\basliklar.PNG" />

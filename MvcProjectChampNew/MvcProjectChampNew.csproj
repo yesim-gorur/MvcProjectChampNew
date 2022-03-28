@@ -2054,9 +2054,7 @@
     <Content Include="AdminLTE-3.0.4\web\css\style.css" />
     <Content Include="AdminLTE-3.0.4\web\images\adminkategory.PNG" />
     <Content Include="AdminLTE-3.0.4\web\images\adminlogin.PNG" />
-    <Content Include="AdminLTE-3.0.4\web\images\AllHeading.PNG" />
     <Content Include="AdminLTE-3.0.4\web\images\banner.jpg" />
-    <Content Include="AdminLTE-3.0.4\web\images\basligaaityazilar.PNG" />
     <Content Include="AdminLTE-3.0.4\web\images\basliklar.PNG" />
     <Content Include="AdminLTE-3.0.4\web\images\close.png" />
     <Content Include="AdminLTE-3.0.4\web\images\contact.jpg" />
